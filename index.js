@@ -80,7 +80,7 @@ async function startBot() {
             const item = orderStates[sender].item;
             const customerWaNumber = sender.split('@')[0];
 
-            // Match the exact format of your JavaGoat Admin Panel
+            // Match the exact format of your MS WA BOT Admin Panel
             const javaGoatOrder = {
                 userId: "whatsapp_" + customerWaNumber,
                 userEmail: "whatsapp@mlmstudio.in",
@@ -169,10 +169,10 @@ async function startBot() {
 
         // --- GREETINGS ---
         else if (text.includes("hi") || text.includes("hello") || text.includes("hey")) {
-            await sock.sendMessage(sender, { text: "👋 *Welcome to JavaGoat!* \n\nI am your AI Assistant. Type *menu* to see our delicious food, or type *order [dish]* to buy instantly!" });
+            await sock.sendMessage(sender, { text: "👋 *Welcome to MS Whatsapp Bot!* \n\nI am your AI Assistant. Type *menu* to see our delicious food, or type *order [dish]* to buy instantly!" });
         }
         else if (text.includes("contact") || text.includes("call")) {
-            await sock.sendMessage(sender, { text: "📞 *Contact JavaGoat:* \n\n- *Email:* support@mlmstudio.in" });
+            await sock.sendMessage(sender, { text: "📞 *Contact BotAdmin:* \n\n- *Email:* support@mlmstudio.in" });
         }
         else {
             await sock.sendMessage(sender, { text: "🤔 I didn't quite catch that.\n\nType *menu* to see our food list, or *order [food]* to place an order!" });
